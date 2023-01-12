@@ -1,35 +1,30 @@
-export default function Statistics({title , stats}) {
+import PropTypes from 'prop-types';
+export default function Statistics({ title, stats }) {
     return (
-    
-<section className="statistics">
-          
- {title && <h2 className="title">{title}</h2>}
-
-
-            
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage">4%</span>
+      <section className="statistics">
+            {title && <h2>{title}</h2>}
+            <div>
+                {stats.map(({ id, label, percentage }) => (
+                 <li className="item" key={id}>
+                    <span className="label">{label}</span>
+      <span className="percentage">{percentage}</span>
     </li>
-    <li className ="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li>
-  </ul>
+                ))}
+            </div>
 </section>
-    )
+  )
+
+
+    
 }
-
-
 Statistics.propTypes = {
-    title: PropTypes.string
-}
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+};
+

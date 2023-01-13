@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 export default function Profile({ username, tag, location, avatar, followers, views, likes }) {
     return (
       <div className="profile">

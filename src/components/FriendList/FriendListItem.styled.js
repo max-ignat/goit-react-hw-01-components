@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 export const Item = styled.li`
+cursor: pointer;
   display: flex;
   justify-content: center;
   margin: 1px auto;

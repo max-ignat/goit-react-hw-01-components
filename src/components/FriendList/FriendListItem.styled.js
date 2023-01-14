@@ -2,18 +2,20 @@ import styled from 'styled-components';
 
 
 export const Item = styled.li`
-cursor: pointer;
+  cursor: pointer;
+
   display: flex;
   justify-content: center;
-  margin: 1px auto;
+  margin: 3px auto;
   align-items: center;
-  width: 250px;
+  width: 280px;
   border-radius: 20px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   :hover {
     transform: scale(1.03);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
   }
-  background-color: aquamarine;
+  background-color: azure;
 `;
 
 export const Status = styled.span`
@@ -21,10 +23,12 @@ export const Status = styled.span`
   height: 20px;
   background-color: ${props => (props.isOnline ? 'green' : 'red')};
   border-radius: 50%;
+
 `;
 
 
 export const Avatar = styled.img`
+  margin-right: auto;
   margin: 10px;
   height: 60px;
   border-radius: 15px;

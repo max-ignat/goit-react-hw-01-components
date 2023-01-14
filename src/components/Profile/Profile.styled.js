@@ -25,6 +25,8 @@ export const Avatar = styled.img`
   width: 200px;
   border-radius: 50%;
   background-color: azure;
+  box-shadow: 1px 2px 1px rgb(0 0 0 / 12%), 1px 2px 2px rgb(0 0 0 / 14%),
+    0px 1px 3px rgb(0 0 0 / 20%);
 `;
 
 export const ParagraphDesc = styled.p`

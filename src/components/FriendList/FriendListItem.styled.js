@@ -19,6 +19,7 @@ export const Item = styled.li`
 `;
 
 export const Status = styled.span`
+ 
   width: 20px;
   height: 20px;
   background-color: ${props => (props.isOnline ? 'green' : 'red')};

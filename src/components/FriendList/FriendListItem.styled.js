@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 
+
 export const Item = styled.li`
   cursor: pointer;
 
@@ -14,6 +15,7 @@ export const Item = styled.li`
   :hover {
     transform: scale(1.03);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    
   }
   background-color: azure;
 `;
@@ -29,6 +31,7 @@ export const Status = styled.span`
 
 
 export const Avatar = styled.img`
+  
   margin-right: auto;
   margin: 10px;
   height: 60px;

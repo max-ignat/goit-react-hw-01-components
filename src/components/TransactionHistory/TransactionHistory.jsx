@@ -1,4 +1,8 @@
+
 import PropTypes from 'prop-types';
+
+
+
 import {
   Table,
   TableRowEl,
@@ -26,9 +30,15 @@ export default function TransactionHistory({ items }) {
             </tr>
           ))}
         </tbody>
+        
       </Table>
+      
     );
 }
+
+ 
+
+
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
